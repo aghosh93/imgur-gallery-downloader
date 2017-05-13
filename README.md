@@ -5,9 +5,11 @@ Ever wanted to download a bunch of imgur albums like maybe multiple wallpaper du
 
 The setup:
 
+```
 Add the gallery hashes you want to download to albumHashes.json
+```
 
-This
+Then
 
 ```
 npm install
