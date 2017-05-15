@@ -1,16 +1,20 @@
 {
   "name": "imgur-gallery-downloader",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "download.js",
   "scripts": {
-    "download": "mkdir images; node download.js"
+    "download": "node index.js"
   },
   "author": "",
   "license": "ISC",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/aghosh93/imgur-gallery-downloader.git"
+  },
   "dependencies": {
-    "fs-promise": "^2.0.3",
-    "imgur": "git+ssh://git@github.com/Imgur/imgur.js.git",
+    "fs-extra": "^3.0.1",
+    "imgur": "git+https://github.com/Imgur/imgur.js.git",
     "request": "^2.81.0",
     "request-promise-native": "^1.0.4"
   }

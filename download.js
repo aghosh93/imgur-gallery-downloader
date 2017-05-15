@@ -5,7 +5,7 @@
 //   process.exit(1);
 // }
 
-var fsp = require('fs-promise');
+var fse = require('fs-extra');
 var rp = require('request-promise-native');
 
 var imgurLib = require('imgur');
@@ -20,7 +20,7 @@ function getImagesFromImgur(albumHash) {
 
 function downloadAlbum(albumHash) {
   console.log('downloading album: ' + albumHash);
-  return fsp.mkdir('images/' + albumHash)
+  return fse.mkdir('images/' + albumHash)
     .then(() => {
       return getImagesFromImgur(albumHash)
         .then((imgurImages) => {
@@ -32,7 +32,7 @@ function downloadAlbum(albumHash) {
               // request.get(imgurImage.link).pipe(fs.createWriteStream(filename));
               return rp.get({uri:imgurImage.link, encoding:null})
                 .then((data) => {
-                  fsp.writeFile(filename, data, 'binary');
+                  fse.writeFile(filename, data, 'binary');
                 });
             });
           }, Promise.resolve());
@@ -41,7 +41,7 @@ function downloadAlbum(albumHash) {
 }
 
 function download() {
-  fsp.readFile('albumHashes.json')
+  fse.readFile('albumHashes.json')
     .then((data) => {
       let albumHashes = JSON.parse(data).albumHashes;
       return albumHashes.reduce((sequence, albumHash) => {
