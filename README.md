@@ -25,7 +25,7 @@ As of right now it will download each image sequentially. If it were to try to d
 ## Install
 
 ```
-npm install --save git+https://github.comaghosh93/imgur-gallery-downloader.git
+npm install --save git+https://github.com/aghosh93/imgur-gallery-downloader.git
 ```
 
 ## Usage
