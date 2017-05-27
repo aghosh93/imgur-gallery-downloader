@@ -2,9 +2,15 @@
 
 --------------------------------------------------------------------------------
 
-[TOC]
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-## Intro
+- [Imgur Gallery Downloader](#imgur-gallery-downloader)
+	- [Install](#install)
+	- [Usage](#usage)
+
+<!-- /TOC -->
+
+ ## Intro
 
 This is a help package to download imgur albums.
 
