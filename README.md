@@ -32,7 +32,7 @@ npm install --save git+https://github.comaghosh93/imgur-gallery-downloader.git
 
 file.js
 
-```
+```javascript
 const downloader = require('imgur-gallery-downloader');
 
 downloader.download('/*Some hash*/');
@@ -40,13 +40,13 @@ downloader.download('/*Some hash*/');
 
 console
 
-```
+```shell
 $ node file.js
 ```
 
 For multiple imgur album hashes
 
-```
+```javascript
 const downloader = require('imgur-gallery-downloader');
 
 downloader.download(['/*Some hash*/', /*Another hash*/]);
