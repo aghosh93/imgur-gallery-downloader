@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "download": "node download.js",
-    "lint": "eslint --config .eslintrc.js .",
-    "lint-fix": "eslint --fix --config .eslintrc.js .",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix .",
     "test": "jest",
     "test-watch": "jest --watch"
   },
