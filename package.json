@@ -15,6 +15,7 @@
     "url": "https://github.com/aghosh93/imgur-gallery-downloader.git"
   },
   "dependencies": {
+    "commander": "^2.14.1",
     "fs-extra": "^3.0.1",
     "imgur": "git+https://github.com/Imgur/imgur.js.git",
     "request": "^2.81.0",
