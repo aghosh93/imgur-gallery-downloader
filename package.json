@@ -6,17 +6,7 @@
   "scripts": {
     "download": "node download.js",
     "lint": "eslint .",
-    "lint-fix": "eslint --fix .",
-    "test": "jest",
-    "test-watch": "jest --watch"
-  },
-  "jest": {
-    "automock": true,
-    "collectCoverage": true,
-    "unmockedModulePathPatterns": [
-      "./node_modules/.*bluebird.*"
-    ],
-    "verbose": true
+    "test": "jest --coverage"
   },
   "author": "",
   "license": "ISC",
@@ -25,9 +15,6 @@
     "url": "https://github.com/aghosh93/imgur-gallery-downloader.git"
   },
   "dependencies": {
-    "eslint": "^3.19.0",
-    "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-node": "^4.2.2",
     "fs-extra": "^3.0.1",
     "imgur": "git+https://github.com/Imgur/imgur.js.git",
     "request": "^2.81.0",
@@ -36,7 +23,10 @@
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-jest": "^21.5.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.12.2",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-node": "^4.2.3",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "jest": "^20.0.1"

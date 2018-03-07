@@ -5,13 +5,18 @@ module.exports = {
     'node': true
   },
   'extends': [
-    'plugin:jest/recommended',
-    'standard'
+    'standard',
+    'plugin:jest/recommended'
   ],
   'globals': {},
   'plugins': [
     'jest',
-    'standard',
-    'promise'
-  ]
+    'json',
+    'promise',
+    'standard'
+  ],
+  'rules': {
+    'semi': [2, 'always'],
+    'strict': [2, 'global']
+  }
 }
