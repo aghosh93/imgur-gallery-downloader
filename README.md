@@ -1,7 +1,5 @@
 # Imgur Gallery Downloader
 
---------------------------------------------------------------------------------
-
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
  - [Imgur Gallery Downloader](#imgur-gallery-downloader)
@@ -25,29 +23,11 @@ As of right now it will download each image sequentially. If it were to try to d
 ## Install
 
 ```
-npm install --save git+https://github.com/aghosh93/imgur-gallery-downloader.git
+npm install --global git+https://github.com/aghosh93/imgur-gallery-downloader.git
 ```
 
 ## Usage
 
-file.js
-
-```javascript
-const downloader = require('imgur-gallery-downloader');
-
-downloader.download('/*Some hash*/');
-```
-
-console
-
 ```shell
-$ node file.js
-```
-
-For multiple imgur album hashes
-
-```javascript
-const downloader = require('imgur-gallery-downloader');
-
-downloader.download(['/*Some hash*/', /*Another hash*/]);
+$ imgur-gallery-downloader <hashes...>
 ```
